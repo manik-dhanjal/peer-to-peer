@@ -1,0 +1,20 @@
+{
+  "name": "p2p",
+  "version": "1.0.0",
+  "description": "end to end encrypted video calling web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx nodemon backend/index.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Manik Dhanjal",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
